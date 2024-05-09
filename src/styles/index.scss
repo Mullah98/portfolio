@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+$redColor: #dc2f2f;
+$darkGreyColor: #222831;
+$greenColor: #344e41;
+$bigFont: 'Nunito Sans', sans-serif;
+$normalFont: 'Rubik', sans-serif;
+
+
+
+.home-page {
+    font-family: $normalFont;
+    font-size: 60px;
+    text-align: center;
+    align-items: center;
+    margin-top: 200px;
+    span {
+        color: $redColor;
+        font-family: $bigFont;
+    }
+}
