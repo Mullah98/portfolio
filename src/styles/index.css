@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 .home-page {
-  font-family: "Rubik", sans-serif;
+  padding-top: 100px;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 60px;
   text-align: center;
   align-items: center;
@@ -10,4 +12,49 @@
 .home-page span {
   color: #dc2f2f;
   font-family: "Nunito Sans", sans-serif;
+}
+.home-page img {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  border: solid 10px #344e41;
+}
+.home-page button {
+  position: relative;
+  top: 40px;
+  right: 20%;
+  padding: 10px;
+  font-size: large;
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar {
+  font-size: x-large;
+  margin-left: 0%;
+  padding: 15px;
+  border: 5px solid;
+  border-radius: 20%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.navbar .nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-list .nav-item {
+  margin-right: 15px;
+}
+.navbar .nav-list .nav-item:last-child {
+  margin-right: 0;
+}
+.navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+}
+.navbar .nav-list .nav-item a:hover {
+  background-color: #111;
 }/*# sourceMappingURL=index.css.map */
