@@ -1,0 +1,68 @@
+.navbar {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+  align-self: center;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  color: #222831;
+  font-family: "Rubik", sans-serif;
+  margin-left: 10px;
+  font-size: 25px;
+  text-decoration: none;
+}
+.item:active, .item.active-link {
+  text-decoration: underline;
+  color: #dc2f2f;
+  font-weight: bold;
+}
+.item:visited {
+  color: "Rubik", sans-serif;
+}
+
+.toggleButton {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .toggleButton {
+    position: absolute;
+    display: block;
+    margin-right: 45%;
+  }
+  .navbar .links {
+    display: none;
+  }
+}
+#open .navbar {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+#open .links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #344e41;
+}
+#open .item {
+  color: white;
+}
+#open .item:active, #open .item.active-link {
+  color: pink;
+}/*# sourceMappingURL=Navbar.css.map */

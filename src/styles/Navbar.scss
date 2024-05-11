@@ -1,0 +1,91 @@
+$redColor: #dc2f2f;
+$greenColor: #344e41;
+$darkGreyColor: #222831;
+$normalFont: 'Rubik', sans-serif;
+
+@mixin flexEnd {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+    align-self: center;
+}
+
+.navbar {
+    @include flexEnd();
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    color: $darkGreyColor;
+    font-family: $normalFont;
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: none;
+
+    &:active,
+    &.active-link {
+        text-decoration: underline;
+        color: $redColor;
+        font-weight: bold;
+    }
+
+    &:visited {
+        color: $normalFont;
+    }
+
+}
+
+.toggleButton {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+    .toggleButton {
+        position: absolute;
+        display: block;
+        margin-right: 45%;
+    }
+    .links {
+        display: none;
+    }
+
+}
+
+}
+
+#open {
+    .navbar {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+    }
+    .links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: $greenColor;
+    }
+    .item {
+        color: white;
+
+        &:active,
+        &.active-link {
+            color: pink;
+        }
+    }
+}
+

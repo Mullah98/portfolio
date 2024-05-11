@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import image from '../assets/personal-img.jpg'
-import '../styles/index.css'
-import Navbar from '../components/Navbar'
+import '../styles/Home.css'
 
 const Home = () => {
     const personalInfo = {
@@ -15,11 +14,14 @@ const Home = () => {
 
   return (
     <div className='home-page'>
-    <img src={image}></img>
+      <div className='img-container'>
+        <img src={image}></img>
+      </div>
+      <div className='txt-container'>
+      <h2>Hi there, my name is <span className='span1'>{personalInfo.firstName + ' ' + personalInfo.lastName}</span></h2>
+      <h3 className='span2'>I am a <span>{titles[selectedTitle]}</span></h3>
       <button>Contact me <i class="bi bi-envelope"></i></button>
-      <h2>Hi there, my name is <span>{personalInfo.firstName + ' ' + personalInfo.lastName}</span></h2>
-      <h3>I am a <span>{titles[selectedTitle]}</span></h3>
-      <Navbar />
+      </div>
     </div>
   )
 }
