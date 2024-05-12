@@ -1,6 +1,33 @@
+$normalFont: 'Rubik', sans-serif;
+
+
+.skills-container {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 60px;
+}
+
 .img-icons {
     width: 15vh;
     height: 15vh;
     border: none;
     border-radius: 0%;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+.icon-item {
+    text-align: center;
+    font-family: $normalFont;
+    // border: 2px black solid;
+    // border-radius: 10%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+
 }

@@ -3,7 +3,8 @@ import '../styles/TechStack.css'
 
 const TechStack = () => {
   const frontend = [
-    {name: 'HTML', icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'},
+    {name: 'Javascript', icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'},
+    {name: 'HTML', icon: 'https://cdn.iconscout.com/icon/free/png-256/free-html-5-1-1175208.png'},
     {name: 'CSS', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png'},
     {name: 'React', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png'},
     {name: 'React Native', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTw3HApB4bsvabXW3L14cV-LhFo0L71QmEESJN3vW9Ow&s'},
@@ -21,13 +22,13 @@ const TechStack = () => {
   return (
     <div className='skills-container'>
       {frontend.map((skill) => (
-        <div>
+        <div className='icon-item'>
         <h4>{skill.name}</h4>
         <img src={skill.icon} className='img-icons'/>
         </div>
       ))}
       {backend.map((skill) => (
-        <div>
+        <div className='icon-item'>
         <h4>{skill.name}</h4>
         <img src={skill.icon} className='img-icons'/>
         </div>
