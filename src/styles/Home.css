@@ -67,6 +67,26 @@ button {
   margin-left: 25%;
 }
 
+.btn-links {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  margin-left: 100px;
+}
+.btn-links button {
+  margin-right: 100px;
+  padding: 20px;
+  border: solid 2px;
+  border-radius: 30%;
+}
+.btn-links button:hover {
+  background-color: #484d53;
+  color: white;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   .home-page {
     display: block;

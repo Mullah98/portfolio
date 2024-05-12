@@ -86,13 +86,35 @@ img {
     border: solid 10px $greenColor;
 }
 
-  button {
-        padding: 10px;
-        font-size: large;
-        font-family: $normalFont;
-        display: block;
-        margin-left: 25%;
+button {
+    padding: 10px;
+    font-size: large;
+    font-family: $normalFont;
+    display: block;
+    margin-left: 25%;
+}  
+
+.btn-links {
+    position: absolute;
+    bottom: 100px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    margin-left: 100px;
+
+    button {
+        margin-right: 100px;
+        padding: 20px;
+        border: solid 2px;
+        border-radius: 30%;
+
+        &:hover {
+            background-color: #484d53;
+            color: white;
+            cursor:pointer;
+        }
     }
+}
 
 
     @media only screen and (max-width: 600px) {
@@ -125,7 +147,6 @@ img {
             h2 {
                 font-size: 40px;
             }
-
         }
 
     }
