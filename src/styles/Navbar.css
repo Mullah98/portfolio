@@ -20,7 +20,7 @@
   color: #222831;
   font-family: "Rubik", sans-serif;
   margin-left: 10px;
-  font-size: 25px;
+  font-size: 40px;
   text-decoration: none;
 }
 .item:active, .item.active-link {
@@ -44,6 +44,11 @@
   }
   .navbar .links {
     display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .navbar .item {
+    font-size: 40px;
   }
 }
 #open .navbar {

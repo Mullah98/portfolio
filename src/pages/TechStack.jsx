@@ -12,27 +12,57 @@ const TechStack = () => {
   ]
 
   const backend = [
-    {name: 'SQL', icon: 'https://logowik.com/content/uploads/images/azure-sql-database6354.jpg'},
     {name: 'PostgreSQL', icon: 'https://download.logo.wine/logo/PostgreSQL/PostgreSQL-Logo.wine.png'},
     {name: 'Node.js', icon: 'https://www.svgrepo.com/download/303360/nodejs-logo.svg'},
     {name: 'Express', icon: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png'},
     {name: 'REST API', icon: 'https://www.opc-router.de/wp-content/uploads/2020/05/REST_socialmedia.jpg'},
   ]
 
+  const development = [
+    {name: 'Git', icon: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png'},
+    {name: 'Jest', icon: 'https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png'},
+    {name: 'npm', icon: 'https://cdn.freebiesupply.com/logos/thumbs/2x/npm-logo.png'},
+  ]
+
   return (
     <div className='skills-container'>
-      {frontend.map((skill) => (
-        <div className='icon-item'>
-        <h4>{skill.name}</h4>
-        <img src={skill.icon} className='img-icons'/>
+
+    <div className='category frontend'>
+      <h1>Frontend Development</h1>
+        <div className='icon-grid'>
+          {frontend.map((skill) => (
+          <div className='icon-item'>
+          <h4>{skill.name}</h4>
+          <img src={skill.icon} className='img-icons'/>
         </div>
-      ))}
-      {backend.map((skill) => (
-        <div className='icon-item'>
-        <h4>{skill.name}</h4>
-        <img src={skill.icon} className='img-icons'/>
+          ))}
+          </div>
+      </div>
+
+      <div className='category backend'>
+        <h1>Backend Development</h1>
+        <div className='icon-grid'>
+          {backend.map((skill) => (
+          <div className='icon-item'>
+          <h4>{skill.name}</h4>
+          <img src={skill.icon} className='img-icons' alt={skill.name}/>
         </div>
-      ))}
+          ))}
+        </div>
+      </div>
+
+      <div className='category development'>
+        <h1>Development Tools</h1>
+        <div className='icon-grid'>
+          {development.map((skill) => (
+            <div className='icon-item'>
+            <h4>{skill.name}</h4>
+            <img src={skill.icon} className='img-icons' alt={skill.name}/>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </div>
   )
 }

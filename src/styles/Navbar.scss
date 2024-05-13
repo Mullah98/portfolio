@@ -29,7 +29,7 @@ $normalFont: 'Rubik', sans-serif;
     color: $darkGreyColor;
     font-family: $normalFont;
     margin-left: 10px;
-    font-size: 25px;
+    font-size: 40px;
     text-decoration: none;
 
     &:active,
@@ -60,8 +60,19 @@ $normalFont: 'Rubik', sans-serif;
         display: none;
     }
 
+    // .btn-links .github .MuiSvgIcon-root {
+    //     font-size: 65px;
+    //   }
+
+ }
 }
 
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        .item {
+            font-size: 40px
+        }
+    }
 }
 
 #open {

@@ -21,11 +21,11 @@ const Home = () => {
       </div>
       <div className='txt-container'>
       <h2>Hi there, my name is <span className='span1'>{personalInfo.firstName + ' ' + personalInfo.lastName}</span></h2>
-      <h3 className='span2'>I am a <span>{titles[selectedTitle]}</span></h3>
+      <h3 className='span2'>I am a <span>{titles[selectedTitle]}</span> <span className='location'>from <span className='location2'>Manchester, UK</span></span></h3>
       </div>
       <div className='btn-links'>
-      <a href='https://github.com/Mullah98'><button className='github'><GitHubIcon /></button></a>
-      <a href='https://www.linkedin.com/in/ibrahim-ullah-380972284'><button className='linkdin'><LinkedInIcon /></button></a>
+      <a href='https://github.com/Mullah98'><button className='github'><GitHubIcon style={{fontSize: 65}}/></button></a>
+      <a href='https://www.linkedin.com/in/ibrahim-ullah-380972284'><button className='linkdin'><LinkedInIcon style={{fontSize: 65}}/></button></a>
       </div>
     </div>
   )
