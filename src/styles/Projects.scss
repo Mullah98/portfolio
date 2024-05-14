@@ -1,0 +1,62 @@
+$normalFont: 'Rubik', sans-serif;
+$headerSize: 35px;
+
+@mixin imageStyle {
+    width: 45vh;
+    height: 50%;
+    // object-fit: scale-down;
+    border: 1px solid black;
+    border-radius: 10%;
+    align-items: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.project {
+    border: 2px solid black;
+
+    // img {
+    //     border: 1px solid black;
+    //     border-radius: 10%;
+    //     align-items: center;
+    // }
+}
+
+.project-grid {
+    padding: 10px;
+
+    h3 {
+        text-align: center;
+        font-size: $headerSize;
+        font-family: $normalFont;
+        text-decoration: underline;
+    }
+}
+
+.backend {
+    .project-img {
+        @include imageStyle;
+    }
+}
+
+.frontend {
+    .project-img {
+        @include imageStyle;
+    }
+}
+
+.travelog {
+    .project-img {
+        @include imageStyle;
+        padding-left: 50px;
+        width: 22vh;
+        height: 22vh;
+        object-fit: scale-down;
+    }
+}

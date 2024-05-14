@@ -26,7 +26,6 @@ const TechStack = () => {
 
   return (
     <div className='skills-container'>
-
     <div className='category frontend'>
       <h1>Frontend Development</h1>
         <div className='icon-grid'>

@@ -1,0 +1,50 @@
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.project {
+  border: 2px solid black;
+}
+
+.project-grid {
+  padding: 10px;
+}
+.project-grid h3 {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: underline;
+}
+
+.backend .project-img {
+  width: 45vh;
+  height: 50%;
+  border: 1px solid black;
+  border-radius: 10%;
+  align-items: center;
+}
+
+.frontend .project-img {
+  width: 45vh;
+  height: 50%;
+  border: 1px solid black;
+  border-radius: 10%;
+  align-items: center;
+}
+
+.travelog .project-img {
+  width: 45vh;
+  height: 50%;
+  border: 1px solid black;
+  border-radius: 10%;
+  align-items: center;
+  padding-left: 50px;
+  width: 22vh;
+  height: 22vh;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}/*# sourceMappingURL=Projects.css.map */
