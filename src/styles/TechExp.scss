@@ -1,0 +1,98 @@
+$normalFont: 'Rubik', sans-serif;
+$smallFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+.timeline-container {
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 10vh;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #000000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    }
+}
+  
+  .timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+  }
+  
+  .timeline-item.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 15px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  .timeline-item.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 15px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  .timeline-content {
+    background-color: white;
+    position: relative;
+  
+    img {
+    width: 200px; 
+    height: auto;
+    border: none;
+    }
+  
+    h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: $normalFont;
+    }
+  
+    h3 {
+    margin-top: -30px;
+    color: #777;
+    font-family: $smallFont
+    }
+
+  p {
+    margin-top: 0px;
+    font-size: 22px;
+    width: 90%;
+    font-family: $smallFont;
+  }
+  
+} 

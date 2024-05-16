@@ -24,8 +24,8 @@ const Home = () => {
       <h3 className='span2'>I am a <span>{titles[selectedTitle]}</span> <span className='location'>from <span className='location2'>Manchester, UK</span></span></h3>
       </div>
       <div className='btn-links'>
-      <a href='https://github.com/Mullah98'><button className='github'><GitHubIcon style={{fontSize: 65}}/></button></a>
-      <a href='https://www.linkedin.com/in/ibrahim-ullah-380972284'><button className='linkdin'><LinkedInIcon style={{fontSize: 65}}/></button></a>
+      <a href='https://github.com/Mullah98' target='_blank'><button className='github'><GitHubIcon style={{fontSize: 65}}/></button></a>
+      <a href='https://www.linkedin.com/in/ibrahim-ullah-380972284' target='_blank'><button className='linkdin'><LinkedInIcon style={{fontSize: 65}}/></button></a>
       </div>
     </div>
   )
