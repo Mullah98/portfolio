@@ -1,0 +1,42 @@
+$normalFont: 'Rubik', sans-serif;
+
+.contact-container {
+    display: block;
+    text-align: center;
+
+}
+
+.main-container {
+    width: 65%;
+    text-align: center;
+    margin: 30vh auto 0;
+    font-family: $normalFont;
+    font-size: 80px;
+
+    span {
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+.button-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: 15vh auto 0;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    button {
+        display: flex;
+        margin: 0 15vh;
+        border: none;
+        background-color: white;
+
+        &:hover {
+            background-color: inherit;
+            color: rgb(62, 62, 62);
+        }
+    }
+}

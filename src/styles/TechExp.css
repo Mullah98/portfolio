@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   padding: 50px 0;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 .timeline {
@@ -85,4 +85,7 @@
   font-size: 22px;
   width: 90%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.timeline-content li {
+  margin-top: 10px;
 }/*# sourceMappingURL=TechExp.css.map */

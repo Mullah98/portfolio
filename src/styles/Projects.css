@@ -32,8 +32,9 @@
   height: 30%;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 10px;
+  padding: 5px;
   transition: bottom 0.3s ease;
+  white-space: break-spaces;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
 }

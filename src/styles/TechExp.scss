@@ -6,7 +6,7 @@ $smallFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     position: relative;
     width: 100%;
     padding: 50px 0;
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
   
   .timeline {
@@ -93,6 +93,10 @@ $smallFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     font-size: 22px;
     width: 90%;
     font-family: $smallFont;
+  }
+
+  li {
+    margin-top: 10px;
   }
   
 } 

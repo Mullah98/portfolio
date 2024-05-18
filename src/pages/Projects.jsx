@@ -70,7 +70,7 @@ const Projects = () => {
         <div className='description'>
         <p>Collaborated with 5 other members to develop a travel diary mobile app which allows users to document their holiday
         journies through photos and destination logs. Within 3 weeks, we had to plan, develop and present the app to other mentors.
-        React Native used for the frontend development, and Firebase for the backend whilst using Expo Go for mobile development</p>
+        Tech stack used: React Native, Firebase and Expo Go.</p>
         </div>
         </div>
         <div className='btn-container'>
