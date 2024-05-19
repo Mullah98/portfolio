@@ -22,9 +22,16 @@ const Contact = () => {
         </button></a>
 
         <a href='mailto:ibz_374@hotmail.com' target='_blank'><button>
-        <EmailIcon style={{fontSize: 65}} /><h3 className='h3-contact'>Email</h3>
+        <EmailIcon style={{fontSize: 65}} /><h3 className='h3-contact'>ibz_374@hotmail.com</h3>
         </button></a>
       </div>
+
+      <footer className='footer'>
+        <div className='container'>
+          <p>Designed and developed by Ibrahim Ullah</p>
+          <p>Copyright &copy; {new Date().getFullYear()}</p>
+        </div>
+      </footer>
     </div>
   )
 }

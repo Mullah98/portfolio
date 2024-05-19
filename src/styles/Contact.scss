@@ -3,7 +3,6 @@ $normalFont: 'Rubik', sans-serif;
 .contact-container {
     display: block;
     text-align: center;
-
 }
 
 .main-container {
@@ -21,7 +20,7 @@ $normalFont: 'Rubik', sans-serif;
 
 .button-container {
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: center;
     margin: 15vh auto 0;
     padding: 10px;
@@ -39,4 +38,29 @@ $normalFont: 'Rubik', sans-serif;
             color: rgb(62, 62, 62);
         }
     }
+    
+    a {
+        text-decoration: none;
+    }
+}
+
+.footer {
+    background-color: #e8e6e6;
+    // color: black;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Ensures it sticks to the bottom */
+    bottom: 0; /* Aligns it to the bottom */
+
+    p {
+        font-family: $normalFont;
+        font-size: 22px;
+    }
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    // padding: 0 15px;
 }

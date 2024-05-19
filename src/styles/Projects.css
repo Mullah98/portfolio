@@ -9,6 +9,9 @@
 .project {
   border: 5px solid black;
 }
+.project a {
+  text-decoration: none;
+}
 
 .project-grid {
   padding: 10px;
@@ -150,4 +153,7 @@ button:hover {
   padding: 20px;
   text-align: center;
   white-space: nowrap;
+}
+.more-container a {
+  text-decoration: none;
 }/*# sourceMappingURL=Projects.css.map */

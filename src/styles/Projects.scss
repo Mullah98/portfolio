@@ -51,6 +51,10 @@ $headerSize: 35px;
 
 .project {
     border: 5px solid black;
+    
+    a {
+        text-decoration: none;
+    }
 }
 
 .project-grid {
@@ -144,5 +148,9 @@ $headerSize: 35px;
         padding: 20px;
         text-align: center;
         white-space: nowrap;
+    }
+
+    a {
+        text-decoration: none;
     }
 }
