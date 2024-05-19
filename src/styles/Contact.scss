@@ -46,12 +46,11 @@ $normalFont: 'Rubik', sans-serif;
 
 .footer {
     background-color: #e8e6e6;
-    // color: black;
     padding: 20px 0;
     text-align: center;
     width: 100%;
-    position: fixed; /* Ensures it sticks to the bottom */
-    bottom: 0; /* Aligns it to the bottom */
+    position: fixed;
+    bottom: 0; 
 
     p {
         font-family: $normalFont;
@@ -62,5 +61,4 @@ $normalFont: 'Rubik', sans-serif;
 .footer .container {
     max-width: 1200px;
     margin: 0 auto;
-    // padding: 0 15px;
 }
