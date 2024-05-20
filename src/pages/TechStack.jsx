@@ -22,6 +22,7 @@ const TechStack = () => {
     {name: 'Git', icon: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png'},
     {name: 'Jest', icon: 'https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png'},
     {name: 'npm', icon: 'https://cdn.freebiesupply.com/logos/thumbs/2x/npm-logo.png'},
+    {name: 'Expo Go', icon: 'https://cdn.worldvectorlogo.com/logos/expo-go-app.svg'}
   ]
 
   return (

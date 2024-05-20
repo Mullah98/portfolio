@@ -43,9 +43,13 @@
   margin: 0 10vh;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  border-radius: 20px;
 }
-.btn-links button .github, .btn-links button .linkdin {
-  font-size: 40px;
+.btn-links button:hover {
+  background-color: rgb(58, 57, 57);
+  color: white;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
