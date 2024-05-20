@@ -43,8 +43,8 @@
   padding: 20px 0;
   text-align: center;
   width: 100%;
-  position: fixed; /* Ensures it sticks to the bottom */
-  bottom: 0; /* Aligns it to the bottom */
+  position: fixed;
+  bottom: 0;
 }
 .footer p {
   font-family: "Rubik", sans-serif;
