@@ -19,8 +19,24 @@ $largeFontSize: 100px;
 
     img {
         width: 45vh;
-        border: 10px solid $greenColor;
         border-radius: 50%;
+    }
+    .blob {
+        background-size: cover;
+        background-position: center center;
+        margin: 20px;
+        box-shadow: 0 5px 5px rgba(5, 94, 39, 0.9);
+        animation: animate 5s ease-in-out infinite;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; 
+    
+        @keyframes animate {
+            0%, 100% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+            50% {
+                border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+            }
+        }
     }
 }
 
@@ -38,8 +54,15 @@ $largeFontSize: 100px;
         color: red;
         font-size: 55px;
     }
-    
+
 }
+
+.Typewriter {
+    .Typewriter__cursor {
+        color: rgb(134, 134, 134);
+    }
+}
+
 
 .flex-left {
     display: flex;
@@ -125,3 +148,26 @@ $largeFontSize: 100px;
     }
 }
 
+// @media only screen and (min-width: 600px) and (max-width: 2500px) {
+//     .home-page {
+//         display: block;
+//         width: 100%;
+//         height: auto;
+//     }
+
+//     .img-container {
+//         img {
+//             margin-left: -15vh;
+//             width: 25vh;
+//         }
+//     }
+
+//     .txt-container {
+//         margin-top: 0vh;
+//         margin-left: 20vh;
+//     }
+
+//     .btn-links {
+//         margin-left: 0;
+//     }
+// }

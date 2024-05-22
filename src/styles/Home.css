@@ -10,8 +10,23 @@
 }
 .img-container img {
   width: 45vh;
-  border: 10px solid #344e41;
   border-radius: 50%;
+}
+.img-container .blob {
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+  box-shadow: 0 5px 5px rgba(5, 94, 39, 0.9);
+  animation: animate 5s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+@keyframes animate {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
 }
 
 .txt-container {
@@ -26,6 +41,10 @@
 .txt-container span {
   color: red;
   font-size: 55px;
+}
+
+.Typewriter .Typewriter__cursor {
+  color: rgb(134, 134, 134);
 }
 
 .flex-left {
