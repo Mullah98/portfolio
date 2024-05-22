@@ -15,7 +15,7 @@ useEffect(() => {
     <div className='navbar' id={expandNavBar ? 'open' : 'close'}>
       <div className='toggleButton'>
         <button onClick={()=> setExpandNavBar((prev) => !prev)}>
-        <ReorderIcon /> 
+        <ReorderIcon style={{fontSize:50}}/> 
         </button>
       </div>
       <div className='links'>

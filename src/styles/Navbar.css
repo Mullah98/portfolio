@@ -6,6 +6,7 @@
   justify-content: flex-end;
   padding: 0 10px;
   align-self: center;
+  position: relative;
 }
 
 .links {
@@ -20,7 +21,7 @@
   color: #222831;
   font-family: "Rubik", sans-serif;
   margin-left: 10px;
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: none;
 }
 .item:active, .item.active-link {
@@ -35,35 +36,36 @@
 .toggleButton {
   display: none;
 }
-
 @media only screen and (max-width: 600px) {
-  .navbar .toggleButton {
+  .toggleButton {
     position: absolute;
     display: block;
-    margin-right: 45%;
+    align-items: center;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
   }
+}
+
+@media only screen and (max-width: 600px) {
   .navbar .links {
     display: none;
   }
 }
-@media only screen and (max-width: 1000px) {
-  .navbar .item {
-    font-size: 40px;
-  }
-}
 #open .navbar {
-  width: 100%;
-  height: 100vh;
   position: fixed;
-  top: 0;
+  width: 100%;
 }
 #open .links {
-  width: 100%;
   display: flex;
+  position: absolute;
   flex-direction: column;
   width: 100%;
   height: 100vh;
   background-color: #344e41;
+  z-index: 1000;
 }
 #open .item {
   color: white;

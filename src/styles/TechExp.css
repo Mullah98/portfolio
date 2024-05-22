@@ -1,8 +1,7 @@
 .timeline-container {
   position: relative;
   width: 100%;
-  padding: 50px 0;
-  margin-top: 5vh;
+  padding: 20px 0;
 }
 
 .timeline {
@@ -25,13 +24,19 @@
   padding: 10px 40px;
   position: relative;
   width: 50%;
+  margin-bottom: 50px;
 }
 
 .timeline-item.left {
   left: 0;
 }
 
+.timeline-item.left2 {
+  margin-top: -20vh;
+}
+
 .timeline-item.right {
+  margin-top: -20vh;
   left: 50%;
 }
 
@@ -76,16 +81,24 @@
   font-family: "Rubik", sans-serif;
 }
 .timeline-content h3 {
-  margin-top: -30px;
   color: #777;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .timeline-content p {
   margin-top: 0px;
-  font-size: 22px;
+  font-size: 16px;
   width: 90%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .timeline-content li {
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .timeline-container {
+    margin-top: 5vh;
+  }
+  .timeline-content {
+    margin-right: 20px;
+  }
 }/*# sourceMappingURL=TechExp.css.map */

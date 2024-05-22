@@ -16,16 +16,18 @@ const Home = () => {
 
   return (
     <div className='home-page'>
+    <div className='flex-left'>
       <div className='img-container'>
         <img src={image}></img>
       </div>
       <div className='txt-container'>
-      <h2>Hi there, my name is <span className='span1'>{personalInfo.firstName + ' ' + personalInfo.lastName}</span></h2>
-      <h3 className='span2'>I am a <span>{titles[selectedTitle]}</span> <span className='location'>from <span className='location2'>Manchester, UK</span></span></h3>
+      <h2>Hi there, my name is <span>{personalInfo.firstName + ' ' + personalInfo.lastName}</span></h2>
+      <h3>I am a <span>{titles[selectedTitle]}</span> from <span>Manchester, UK</span></h3>
+      </div>
       </div>
       <div className='btn-links'>
-      <a href='https://github.com/Mullah98' target='_blank'><button className='github'><GitHubIcon style={{fontSize: 65}}/></button></a>
-      <a href='https://www.linkedin.com/in/ibrahim-ullah-380972284' target='_blank'><button className='linkdin'><LinkedInIcon style={{fontSize: 65}}/></button></a>
+      <a href='https://github.com/Mullah98' target='_blank'><button className='github'><GitHubIcon style={{fontSize: 40}} /></button></a>
+      <a href='https://www.linkedin.com/in/ibrahim-ullah-380972284' target='_blank'><button className='linkdin'><LinkedInIcon style={{fontSize: 40}}/></button></a>
       </div>
     </div>
   )
