@@ -16,7 +16,7 @@
   background-size: cover;
   background-position: center center;
   margin: 20px;
-  box-shadow: 0 5px 5px rgba(5, 94, 39, 0.9);
+  box-shadow: 0 5px 5px rgba(5, 94, 39, 0.8);
   animation: animate 5s ease-in-out infinite;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 }
