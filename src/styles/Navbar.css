@@ -24,6 +24,9 @@
   font-size: 30px;
   text-decoration: none;
 }
+.item:hover {
+  color: rgb(155, 152, 152);
+}
 .item:active, .item.active-link {
   text-decoration: underline;
   color: #dc2f2f;
@@ -72,4 +75,10 @@
 }
 #open .item:active, #open .item.active-link {
   color: pink;
+}
+
+@media only screen and (min-width: 2560px) {
+  .links .item {
+    font-size: 34px;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

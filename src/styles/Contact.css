@@ -71,4 +71,9 @@
   .footer p {
     margin-left: 100px;
   }
+}
+@media only screen and (min-width: 2560px) {
+  .contact-container {
+    margin-top: 10vh;
+  }
 }/*# sourceMappingURL=Contact.css.map */

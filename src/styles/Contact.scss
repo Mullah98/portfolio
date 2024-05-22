@@ -62,7 +62,6 @@ $normalFont: 'Rubik', sans-serif;
 @media only screen and (max-width: 600px) {
     .contact-container {
         margin-top: -15vh;
-        // display: flex;
         z-index: -1;
 
         .main-container {
@@ -85,5 +84,11 @@ $normalFont: 'Rubik', sans-serif;
         p {
             margin-left: 100px;
         }
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .contact-container {
+        margin-top: 10vh;
     }
 }

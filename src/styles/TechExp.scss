@@ -112,3 +112,14 @@ li {
     margin-right: 20px;
   }
 }
+
+@media only screen and (min-width: 2560px) {
+  .timeline-container {
+    margin-top: 10vh;
+  }
+
+  .timeline-item.right,
+  .timeline-item.left2 {
+    margin-top: 10vh; /* Adjusted for consistency */
+  }
+}

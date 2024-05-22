@@ -33,6 +33,10 @@ $normalFont: 'Rubik', sans-serif;
     font-size: 30px;
     text-decoration: none;
 
+    &:hover {
+        color: rgb(155, 152, 152);
+    }
+
     &:active,
     &.active-link {
         text-decoration: underline;
@@ -68,12 +72,6 @@ $normalFont: 'Rubik', sans-serif;
     }
 }
 
-@media only screen and (max-width: 2560px) {
-    .item {
-        // font-size: 200px;
-    }
-}
-
 #open {
     .navbar {
         position: fixed;
@@ -98,3 +96,12 @@ $normalFont: 'Rubik', sans-serif;
     }
 }
 
+
+@media only screen and (min-width: 2560px) {
+    .links {
+
+        .item {
+            font-size: 34px;
+        }
+    }
+}

@@ -3,6 +3,7 @@ import image from '../assets/personal-img.jpg'
 import '../styles/Home.css'
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import CV from '../assets/IbrahimUllahCV.pdf'
 
 const Home = () => {
     const personalInfo = {
@@ -26,6 +27,7 @@ const Home = () => {
       </div>
       </div>
       <div className='btn-links'>
+      <a href={CV} download="ibrahimullah-cv.pdf"><button className='cv' style={{whiteSpace: 'nowrap', fontSize: 16}}>Download CV</button></a>
       <a href='https://github.com/Mullah98' target='_blank'><button className='github'><GitHubIcon style={{fontSize: 40}} /></button></a>
       <a href='https://www.linkedin.com/in/ibrahim-ullah-380972284' target='_blank'><button className='linkdin'><LinkedInIcon style={{fontSize: 40}}/></button></a>
       </div>
