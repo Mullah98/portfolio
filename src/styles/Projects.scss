@@ -122,7 +122,8 @@ $headerSize: 35px;
 
 @media only screen and (max-width: 600px) {
     .project-container {
-        display: block  ;
+        display: block;
+        margin-top: 10vh;
     }
 
     .flex {

@@ -5,6 +5,7 @@ const TechExp = () => {
   return (
     <div className='timeline-container'>
       <div className='timeline'>
+      
         <div className='timeline-item left'>
           <div className='timeline-content'>
             <img src='https://img.cdndtl.co.uk/c964k834sz0v/e3c6fd06-e76e-442c-b914-547af16be7dc/387ee72ff140c2b6e08d340037ac9487/rsz_bt_logo_to_resize_for_msm.png?auto=format&s=72ea6c547992c8387ee09d68d512789chttps://static.dezeen.com/uploads/2019/06/bt-logo-redesign-hero-1-852x480.jpg' alt='BT Logo' />
@@ -36,7 +37,7 @@ const TechExp = () => {
           </div>
         </div>
 
-        <div className='timeline-item left'>
+        <div className='timeline-item left2'>
           <div className='timeline-content'>
             <img src='https://www.dynamonortheast.co.uk/wp-content/uploads/2022/08/Northcoders-Primary-Logo-Red-4.jpg' alt='Northcoders Logo' />
             <h2>Junior Software Developer</h2>

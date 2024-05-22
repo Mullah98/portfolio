@@ -1,57 +1,74 @@
 .contact-container {
-  display: block;
+  width: 100%;
+  position: relative;
   text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 55px;
 }
 
 .main-container {
-  width: 65%;
   text-align: center;
-  margin: 30vh auto 0;
-  font-family: "Rubik", sans-serif;
-  font-size: 80px;
+  padding: 25vh 0 0 10vh;
+  width: 90%;
 }
 .main-container span {
   font-style: italic;
-  font-weight: bold;
+  font-weight: 400;
+  color: red;
 }
 
 .button-container {
   display: flex;
-  width: 60%;
-  justify-content: center;
-  margin: 15vh auto 0;
-  padding: 10px;
-  border: 2px solid black;
+  width: 65%;
+  margin: 20vh auto 0;
+  border: 2px solid rgb(219, 219, 219);
   border-radius: 20px;
+  padding: 5px;
 }
 .button-container button {
   display: flex;
   margin: 0 15vh;
-  border: none;
-  background-color: white;
+  padding: 10px;
+  border: black;
+  border-radius: 20px;
+}
+.button-container button a {
+  padding-right: 10px;
 }
 .button-container button:hover {
   background-color: inherit;
   color: rgb(62, 62, 62);
-}
-.button-container a {
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer {
   background-color: #e8e6e6;
-  padding: 20px 0;
-  text-align: center;
   width: 100%;
   position: fixed;
   bottom: 0;
+  left: 0;
 }
 .footer p {
-  font-family: "Rubik", sans-serif;
-  font-size: 22px;
+  font-size: 16px;
 }
 
-.footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
+@media only screen and (max-width: 600px) {
+  .contact-container {
+    margin-top: -15vh;
+    z-index: -1;
+  }
+  .contact-container .main-container {
+    width: 70%;
+  }
+  .contact-container .button-container {
+    display: block;
+    margin-top: 1vh;
+    border: none;
+  }
+  .contact-container .button-container button {
+    margin-top: 2vh;
+  }
+  .footer p {
+    margin-left: 100px;
+  }
 }/*# sourceMappingURL=Contact.css.map */

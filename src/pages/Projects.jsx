@@ -29,7 +29,7 @@ const Projects = () => {
         <div className='image-container'>
         <img src={project.image} className='project-img'></img>
         <div className='hover'>
-        <p>Backend project involved designing and implementing a dynamic API utilizing SQL, JEST and Test-driven Development methologies.
+        <p>Backend project involved designing and implementing a dynamic API utilizing SQL, JEST and Test-driven Development methodologies.
         Hosted on Render to allow easy access for users.</p>
         </div>
         </div>
@@ -49,7 +49,7 @@ const Projects = () => {
         <img src={project.image} className='project-img'></img>
         <div className='hover'>
         <p>Frontend project for the Northcoders News backend project. A website for social news collection and discussions. 
-        Developed using React and implementing CRUD funcionality for a user-friendly and interactive experience.
+        Developed using React and implementing CRUD functionality for a user-friendly and interactive experience.
         Deployed the website on Netifly for seamless user accessibility.</p>
         </div>
         </div>
@@ -69,7 +69,7 @@ const Projects = () => {
         <img src={project.image} className='project-img'></img>
         <div className='hover'>
         <p>Collaborated with 5 other members to develop a travel diary mobile app which allows users to document their holiday
-        journies through photos and destination logs. Within 3 weeks, we had to plan, develop and present the app to other mentors.
+        journeys through photos and destination logs. Within 3 weeks, we had to plan, develop and present the app to other mentors.
         Tech stack used: React Native, Firebase and Expo Go.</p>
         </div>
         </div>

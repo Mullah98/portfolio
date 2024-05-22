@@ -99,6 +99,7 @@
 @media only screen and (max-width: 600px) {
   .project-container {
     display: block;
+    margin-top: 10vh;
   }
   .flex {
     display: block;
