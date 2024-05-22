@@ -3,7 +3,7 @@ import '../styles/Projects.css'
 import backendProject from '../assets/backend-project.png'
 import frontendProject from '../assets/frontend-project.png'
 import travelogProject from '../assets/travelog-project.png'
-import GitHubIcon from "@material-ui/icons/GitHub";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 
 const Projects = () => {
