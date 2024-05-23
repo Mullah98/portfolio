@@ -111,6 +111,12 @@
   .project {
     width: 100%;
   }
+  .frontend {
+    padding-left: 20px;
+  }
+  .frontend .image-container img {
+    margin-left: -12vh;
+  }
   .more-container {
     margin-top: 3vh;
   }

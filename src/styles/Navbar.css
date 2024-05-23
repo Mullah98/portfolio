@@ -18,7 +18,7 @@
 }
 
 .item {
-  color: #222831;
+  color: #21262e;
   font-family: "Rubik", sans-serif;
   margin-left: 10px;
   font-size: 30px;
@@ -67,14 +67,14 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-color: #344e41;
+  background-color: #21262e;
   z-index: 1000;
 }
 #open .item {
-  color: white;
+  color: whitesmoke;
 }
 #open .item:active, #open .item.active-link {
-  color: pink;
+  color: #dc2f2f;
 }
 
 @media only screen and (min-width: 2560px) {

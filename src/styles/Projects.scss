@@ -139,6 +139,16 @@ $headerSize: 35px;
         width: 100%;
     }
 
+    .frontend {
+        padding-left: 20px;
+        .image-container {
+
+            img {
+                margin-left: -12vh;
+            }
+        }
+    }
+
     .more-container {
         margin-top: 3vh;
     }

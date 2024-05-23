@@ -111,6 +111,11 @@ li {
   .timeline-content {
     margin-right: 20px;
   }
+
+  .timeline-item.left,
+  .timeline-item.left2 {
+    padding-left: 0px;
+  }
 }
 
 @media only screen and (min-width: 2560px) {
@@ -118,8 +123,9 @@ li {
     margin-top: 10vh;
   }
 
+
   .timeline-item.right,
   .timeline-item.left2 {
-    margin-top: 10vh; /* Adjusted for consistency */
+    margin-top: 10vh;
   }
 }

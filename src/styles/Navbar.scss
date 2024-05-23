@@ -1,6 +1,6 @@
 $redColor: #dc2f2f;
 $greenColor: #344e41;
-$darkGreyColor: #222831;
+$darkGreyColor: #21262e;
 $normalFont: 'Rubik', sans-serif;
 
 @mixin flexEnd {
@@ -83,15 +83,15 @@ $normalFont: 'Rubik', sans-serif;
         flex-direction: column;
         width: 100%;
         height: 100vh;
-        background-color: $greenColor;
+        background-color: $darkGreyColor;
         z-index: 1000;
     }
     .item {
-        color: white;
+        color: whitesmoke;
 
         &:active,
         &.active-link {
-            color: pink;
+            color: $redColor;
         }
     }
 }
