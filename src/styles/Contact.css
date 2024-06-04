@@ -1,9 +1,12 @@
 .contact-container {
   width: 100%;
+  height: 100vh;
   position: relative;
   text-align: center;
   font-family: "Rubik", sans-serif;
   font-size: 55px;
+  padding: 0 5%;
+  z-index: 0;
 }
 
 .main-container {
@@ -24,6 +27,7 @@
   border: 2px solid rgb(219, 219, 219);
   border-radius: 20px;
   padding: 5px;
+  z-index: 100;
 }
 .button-container button {
   display: flex;
@@ -31,6 +35,7 @@
   padding: 10px;
   border: black;
   border-radius: 20px;
+  z-index: 3;
 }
 .button-container button a {
   padding-right: 10px;
@@ -47,6 +52,8 @@
   position: fixed;
   bottom: 0;
   left: 0;
+  padding: 10px 0;
+  z-index: 0;
 }
 .footer p {
   font-size: 16px;
@@ -54,19 +61,23 @@
 
 @media only screen and (max-width: 600px) {
   .contact-container {
-    margin-top: -15vh;
-    z-index: -1;
+    font-size: 45px;
+    padding: 0 2%;
   }
   .contact-container .main-container {
-    width: 70%;
+    width: 100%;
   }
   .contact-container .button-container {
-    display: block;
-    margin-top: 1vh;
+    width: 100%;
+    margin: 2vh 0;
     border: none;
   }
   .contact-container .button-container button {
-    margin-top: 2vh;
+    width: 100%;
+    margin: 1vh auto;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 14px;
   }
   .footer p {
     margin-left: 100px;

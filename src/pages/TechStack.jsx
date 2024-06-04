@@ -31,7 +31,7 @@ const TechStack = () => {
       <h1>Frontend Development</h1>
         <div className='icon-grid'>
           {frontend.map((skill) => (
-          <div className='icon-item'>
+          <div className='icon-item' key={skill.name}>
           <h4>{skill.name}</h4>
           <img src={skill.icon} className='img-icons'/>
         </div>
@@ -43,7 +43,7 @@ const TechStack = () => {
         <h1>Backend Development</h1>
         <div className='icon-grid'>
           {backend.map((skill) => (
-          <div className='icon-item'>
+          <div className='icon-item' key={skill.name}>
           <h4>{skill.name}</h4>
           <img src={skill.icon} className='img-icons' alt={skill.name}/>
         </div>
@@ -55,7 +55,7 @@ const TechStack = () => {
         <h1>Development Tools</h1>
         <div className='icon-grid'>
           {development.map((skill) => (
-            <div className='icon-item'>
+            <div className='icon-item' key={skill.name}>
             <h4>{skill.name}</h4>
             <img src={skill.icon} className='img-icons' alt={skill.name}/>
             </div>

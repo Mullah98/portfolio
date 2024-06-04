@@ -24,7 +24,7 @@ const Projects = () => {
     <div className='flex'>
     <div className='project backend'>
       {ncNews.map((project) => (
-        <div className='project-grid'>
+        <div className='project-grid' key={project.name}>
         <h3>{project.name}</h3>
         <div className='image-container'>
         <img src={project.image} className='project-img'></img>
@@ -43,7 +43,7 @@ const Projects = () => {
 
     <div className='project frontend'>
       {ncMarketPlace.map((project) => (
-        <div className='project-grid'>
+        <div className='project-grid' key={project.name}>
         <h3>{project.name}</h3>
         <div className='image-container'>
         <img src={project.image} className='project-img'></img>
@@ -63,7 +63,7 @@ const Projects = () => {
 
     <div className='project travelog'>
       {travelog.map((project) => (
-        <div className='project-grid'>
+        <div className='project-grid' key={project.name}>
         <h3>{project.name}</h3>
         <div className='image-container'>
         <img src={project.image} className='project-img'></img>

@@ -16,6 +16,7 @@ $normalFont: 'Rubik', sans-serif;
 .navbar {
     @include flexEnd();
     position: relative;
+    z-index: 1000;
 }
 
 .links {
@@ -59,7 +60,6 @@ $normalFont: 'Rubik', sans-serif;
         color: white;
         border: none;
         padding: 10px;
-        cursor: pointer;
         font-size: 30px;
         }
 }
@@ -76,15 +76,18 @@ $normalFont: 'Rubik', sans-serif;
     .navbar {
         position: fixed;
         width: 100%;
+        z-index: 100;
     }
     .links {
         display: flex;
         position: absolute;
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         background-color: $darkGreyColor;
         z-index: 1000;
+        top: 0;
+        left: 0;
     }
     .item {
         color: whitesmoke;
