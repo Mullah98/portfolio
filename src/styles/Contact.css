@@ -72,6 +72,7 @@
     margin-top: 10vh;
     margin-left: 5vh;
     border: none;
+    z-index: 1000;
   }
   .contact-container .button-container button {
     width: 100%;
