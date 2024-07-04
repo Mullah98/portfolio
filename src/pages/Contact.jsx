@@ -21,8 +21,8 @@ const Contact = () => {
         <LinkedInIcon style={{fontSize: 40}} /><h3 className='h3-contact'>LinkedIn</h3>
         </button></a>
 
-        <a href='mailto:ibz_374@hotmail.com' target='_blank'><button>
-        <EmailIcon style={{fontSize: 40}} /><h3 className='h3-contact'>ibz_374@hotmail.com</h3>
+        <a href='mailto:ibrahimul106@gmail.com' target='_blank'><button>
+        <EmailIcon style={{fontSize: 40}} /><h3 className='h3-contact'>ibrahimul106@gmail.com</h3>
         </button></a>
       </div>
 
