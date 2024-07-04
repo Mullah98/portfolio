@@ -48,7 +48,7 @@ const Home = () => {
         </div>
       </div>
       <div className='btn-links'>
-      <a href={CV} download="ibrahimullah-cv.pdf"><button className='cv' style={{whiteSpace: 'nowrap', fontSize: 16}}>Download CV</button></a>
+      <a href={CV} download="IbrahimUllahCV.pdf"><button className='cv' style={{whiteSpace: 'nowrap', fontSize: 16}}>Download CV</button></a>
       <a href='https://github.com/Mullah98' target='_blank'><button className='github'><GitHubIcon style={{fontSize: 40}} /></button></a>
       <a href='https://www.linkedin.com/in/ibrahim-ullah-380972284' target='_blank'><button className='linkdin'><LinkedInIcon style={{fontSize: 40}}/></button></a>
       </div>
