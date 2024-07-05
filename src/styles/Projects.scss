@@ -3,108 +3,91 @@ $headerSize: 35px;
 
 @mixin hoverAnimation {
     position: absolute;
-    align-items: center;
-    bottom: 0%;
+    bottom: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     opacity: 0;
-    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
 }
 
 .project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    padding: 20px;
+    margin: 140px 0 0 0;
 }
 
 .flex {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
 }
 
 .project {
-    width: 30%;
+    border: 5px solid #7b7d80;
+    border-radius: 10px;
     text-align: center;
-    margin-top: 5vh;
-
-    &.frontend, &.backend {
-        .project-img {
-            width: 60vh;
-            height: 50vh;
-        }
-    }
-
-    &.travelog {
-        .project-img {
-            width: 30vh;
-            height: auto;
-        }
-    }
-}
-
-.project-grid {
-    border: 2px solid rgb(65, 63, 63);
-    padding-bottom: 5px;
+    position: relative;
 
     h3 {
-        text-align: center;
+        font-size: $headerSize;
         font-family: $normalFont;
-        font-size: 30px;
-        text-decoration: underline;
     }
-}
 
-.image-container {
-    position: relative;
-    overflow: hidden;
+    .project-img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 300px; 
+        display: block;
+        margin: auto;
+    }
 
     .hover {
-        @include hoverAnimation();
+        @include hoverAnimation;
+        display: block;
 
         p {
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-top: 20vh;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 20px;
+            padding: 5px;
+            text-align: center;
+            margin: 100px 0 0 0;
         }
     }
 
     &:hover .hover {
         opacity: 1;
-        cursor: pointer;
     }
 }
 
-.btn-container {
-    
-    button {
-        margin-left: 5vh;
-        border-radius: 20px;
-        padding: 10px;
-        font-style: bold;
-        cursor: pointer;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+button {
+    border-radius: 20px;
+    padding: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-        &:hover {
-            background-color: rgb(58, 57, 57);
-            color: white;
-            cursor: pointer;
-        }
+    &:hover {
+        background-color: rgb(58, 57, 57);
+        color: white;
     }
 }
 
 .more-container {
-    margin-top: auto;
+    margin-top: 20px;
     text-align: center;
-    
+
     button {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding: 15px;
@@ -114,42 +97,37 @@ $headerSize: 35px;
         &:hover {
             background-color: rgb(58, 57, 57);
             color: white;
-            cursor: pointer;
         }
     }
 }
 
-
 @media only screen and (max-width: 600px) {
-    .project-container {
-        display: block;
-        margin-top: 10vh;
-    }
-
     .flex {
         display: block;
-        width: 100%;
-    }
-
-    .project-grid {
-        width: auto;
     }
 
     .project {
-        width: 100%;
-    }
+        margin: 20px 0;
+        position: relative;
+        padding-bottom: 80px;
 
-    .frontend {
-        padding-left: 20px;
-        .image-container {
+        .btn-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between; 
 
-            img {
-                margin-left: -12vh;
+            button {
+                margin-top: 10px;
+                width: calc(50% - 10px);
             }
         }
-    }
 
-    .more-container {
-        margin-top: 3vh;
+        min-height: 340px;
+
+        &:last-child {
+            min-height: 340px;
+        }
     }
 }
