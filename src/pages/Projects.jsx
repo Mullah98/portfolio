@@ -5,6 +5,7 @@ import frontendProject from '../assets/frontend-project.png';
 import travelogProject from '../assets/travelog-project.png';
 import portfolioProject from '../assets/portfolio-project.png';
 import carRentalProject from '../assets/eliteCarRental-project.png';
+import myFootAppProject from '../assets/myfootapp-project.png';
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Projects = () => {
@@ -42,6 +43,11 @@ const Projects = () => {
       description: "Developed a frontend website using Vue.js. Users are provided a platform which allows a seamless selection of supercars to choose from, with dynamic options for dates, times and rental durations.",
       demoLink: "https://elite-car-rental.netlify.app/",
       githubLink: "https://github.com/Mullah98/Car-Rental-app"
+    },
+    {
+      name: 'My Footy App',
+      image: myFootAppProject,
+      description: "Coming soon...."
     }
   ];
 
