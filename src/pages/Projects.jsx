@@ -6,6 +6,7 @@ import travelogProject from '../assets/travelog-project.png';
 import portfolioProject from '../assets/portfolio-project.png';
 import carRentalProject from '../assets/eliteCarRental-project.png';
 import myFootAppProject from '../assets/myfootapp-project.png';
+import exhibitionProject from '../assets/exhibit-ease.png'
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Projects = () => {
@@ -47,7 +48,16 @@ const Projects = () => {
     {
       name: 'My Footy App',
       image: myFootAppProject,
-      description: "Coming soon...."
+      description: "A football data app built with Next.js. View the latest league standings, fixtures and more with the latest data provided by API-Football.",
+      demoLink: "https://www.youtube.com/watch?v=vH9TijMc_jo",
+      githubLink: "https://github.com/Mullah98/My-Footy-App"
+    },
+    {
+      name: 'Exhibit Ease',
+      image: exhibitionProject,
+      description: "A exhibition curator project built with Next.js and Tailwind CSS. Users can view and select artworks integrated  with Harvard and Met Museum APIs.",
+      demoLink: "https://exhibition-curator-project.vercel.app",
+      githubLink: "https://github.com/Mullah98/exhibition-curator-project"
     }
   ];
 
