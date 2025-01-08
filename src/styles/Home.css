@@ -35,6 +35,25 @@
   align-items: center;
 }
 
+.btn-links button {
+  padding: 8px 12px;
+  border: 2px solid #6c6c6c;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #6c6c6c;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-links button:hover {
+  background-color: #4a4a4a;
+  color: white;
+  border-color: #3a3a3a;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 .txt-container {
   margin: 100px 0 0 0;
 }

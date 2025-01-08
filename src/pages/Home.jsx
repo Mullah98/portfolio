@@ -30,9 +30,9 @@ const Home = () => {
         <img src={image} className='blob'></img>
       </div>
       <div className='btn-links'>
-        <a href={CV} download="IbrahimUllahCV.pdf"><button className='cv' style={{whiteSpace: 'nowrap', fontSize: 13}}>Download CV</button></a>
-        <a href='https://github.com/Mullah98' target='_blank'><button className='github'><GitHubIcon style={{fontSize: 30}} /></button></a>
-        <a href='https://www.linkedin.com/in/ibrahim-ullah-380972284' target='_blank'><button className='linkdin'><LinkedInIcon style={{fontSize: 30}}/></button></a>
+        <a href={CV} download="IbrahimUllahCV.pdf"><button style={{whiteSpace: 'nowrap', fontSize: 13}}>Download CV</button></a>
+        <a href='https://github.com/Mullah98' target='_blank'><button><GitHubIcon style={{fontSize: 30}} /></button></a>
+        <a href='https://www.linkedin.com/in/ibrahim-ullah-380972284' target='_blank'><button><LinkedInIcon style={{fontSize: 30}}/></button></a>
       </div>
     </div>
     <div className='flex-right'>
@@ -68,7 +68,6 @@ const Home = () => {
         </div>
       ))}
       </div>
-
   </div>
   </div>
   )
