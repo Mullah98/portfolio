@@ -1,39 +1,76 @@
-import React from 'react'
-import '../styles/Contact.css'
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from '@mui/icons-material/Email';
+import React, { useState } from 'react';
+import '../styles/Contact.css';
 
 const Contact = () => {
+  const [buttonText, setButtonText] = useState('Send Message');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
+
+    const form = e.target;
+    const formData = new FormData(form);
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setButtonText('Message Sent');
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Error submitting the form.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
-    <div className='contact-container'>
-
-      <div className='main-container'>
-        <p>Feel free to reach out to discuss potential <span>opportunities</span>, <span>collaborations</span>, or just to <span>connect</span>.</p>
+    <div className="contact-container">
+      <div className="main-container">
+        <h2>Contact Me</h2>
+        <h3>
+          Feel free to reach out to discuss potential <span>opportunities</span>,{" "}
+          <span>collaborations</span>, or just to <span>connect</span>.
+        </h3>
       </div>
 
-      <div className='button-container'>
-        <a href='https://github.com/Mullah98' target='_blank'><button>
-        <GitHubIcon style={{fontSize: 40}} /><h3 className='h3-contact'>GitHub</h3>
-        </button></a>
+      <div className="form-container">
+        <form onSubmit={handleSubmit} className="contact-form">
+          <input type="hidden" name="access_key" value="2da3a108-8e9c-457e-b0aa-52d4af9f9ef2" />
+          <input type="hidden" name="subject" value="Email from Portfolio" />
 
-        <a href='https://www.linkedin.com/in/ibrahim-ullah-380972284' target='_blank'><button>
-        <LinkedInIcon style={{fontSize: 40}} /><h3 className='h3-contact'>LinkedIn</h3>
-        </button></a>
+          <label htmlFor="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Your Name" required />
 
-        <a href='mailto:ibrahimul106@gmail.com' target='_blank'><button>
-        <EmailIcon style={{fontSize: 40}} /><h3 className='h3-contact'>ibrahimul106@gmail.com</h3>
-        </button></a>
+          <label htmlFor="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Your Email" required />
+
+          <label htmlFor="subject">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="Subject of Your Message" required />
+
+          <label htmlFor="message">Message</label>
+          <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+          
+          <button type="submit" disabled={isSubmitting}>{buttonText}</button>
+        </form>
+        <p>
+          Or email me directly at:{" "}
+          <a href="mailto:ibrahimul106@gmail.com">ibrahimul106@gmail.com</a>
+        </p>
       </div>
-
-      <footer className='footer'>
-        <div className='container'>
-          <p>Designed and developed by Ibrahim Ullah</p>
-          <p>Copyright &copy; {new Date().getFullYear()}</p>
-        </div>
-      </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
