@@ -52,7 +52,7 @@ h2 {
 }
 
 .tech-stack {
-    margin: 90px 50px;
+    margin: 60px;
 }
 
 .tech {
@@ -121,3 +121,43 @@ h2 {
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .project-container {
+        margin: 60px 10px; 
+    }
+
+    .project {
+        flex-direction: column;
+        padding: 20px; 
+    }
+
+    .image-container img {
+        height: 400px;
+    }
+
+    .project-content {
+        margin: 20px 10px;
+        width: 100%; 
+    }
+
+    .tech-stack {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .more-links {
+        text-align: center;
+    }
+
+    .btn-links {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .btn-links button {
+        margin: 5px 0;
+    }
+}

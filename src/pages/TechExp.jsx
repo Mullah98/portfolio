@@ -7,22 +7,7 @@ const TechExp = () => {
       <div className='timeline'>
       
         <div className='timeline-item left'>
-          <div className='timeline-content'>
-            <img src='https://img.cdndtl.co.uk/c964k834sz0v/e3c6fd06-e76e-442c-b914-547af16be7dc/387ee72ff140c2b6e08d340037ac9487/rsz_bt_logo_to_resize_for_msm.png?auto=format&s=72ea6c547992c8387ee09d68d512789chttps://static.dezeen.com/uploads/2019/06/bt-logo-redesign-hero-1-852x480.jpg' alt='BT Logo' />
-            <h2>Call advisor</h2>
-            <h3>July 2019 - August 2020</h3>
-            <p>
-            <ul>
-              <li>Worked in the billing and faults department</li>
-              <li>Provided assistance and advice to a wide range of customers</li>
-              <li>Ensured customer satisfaction with my communication skills and strong ability to solve complex problems</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-
-        <div className='timeline-item right'>
-          <div className='timeline-content'>
+        <div className='timeline-content'>
             <img src='https://cdnb.artstation.com/p/assets/images/images/013/951/611/large/hamid-ahbedin-capture4.jpg?1541792740' alt='Artstation' />
             <h2>Teacher</h2>
             <h3>September 2021 - February 2023</h3>
@@ -37,22 +22,39 @@ const TechExp = () => {
           </div>
         </div>
 
-        <div className='timeline-item left2'>
+        <div className='timeline-item right'>
           <div className='timeline-content'>
             <img src='https://www.dynamonortheast.co.uk/wp-content/uploads/2022/08/Northcoders-Primary-Logo-Red-4.jpg' alt='Northcoders Logo' />
-            <h2>Junior Software Developer</h2>
+            <h2>Junior Full-Stack Developer</h2>
             <h3>January 2024 - April 2024</h3>
             <p>
               <ul>
-                <li>Graduated from Northcoders: One of the UK's top leading bootcamps in the tech industry</li>
-                <li>Learned the fundamentals of JavaScript and acquired skills in the PERN stack</li>
-                <li>Engaged in daily paired-programming sessions</li>
-                <li>Gained hands-on experience through individual and group projects</li>
-                <li>Studied Object-Orientated Programming (OOP), APIs and databases</li>
+                <li>Completed a 13-week intensive bootcamp, mastering JavaScript, Node.js, and React fundamentals.</li>
+                <li>Built applications, websites, and APIs from scratch through full-stack projects.</li>
+                <li>Applied Test-Driven Development (TDD) and collaborated in pair programming daily.</li>
+                <li>Strengthened problem-solving skills using self-tuition and technical documentation.</li>
+                <li>Deployed projects including NC News and Marketplace using React, Node.js, and PostgreSQL.</li>
               </ul>
             </p>
           </div>
         </div>
+
+        <div className='timeline-item left2'>
+          <div className='timeline-content'>
+            <img src='https://miro.medium.com/v2/resize:fit:797/1*xn_6LH8GFaJNbsKSZVHm6g.png' alt='Tech Returners Logo' />
+            <h2>Freelance Project Consultant</h2>
+            <h3>September 2024 - October 2024</h3>
+            <p>
+              <ul>
+                <li>Developed an exhibition curator platform as part of Tech Returners' Launchpad program.</li>
+                <li>Managed the entire development lifecycle, ensuring the MVP was achieved.</li>
+                <li>Enhanced technical and professional skills through real-world consultancy experience.</li>
+                <li>Utilized Next.js, React, and Tailwind CSS to improve platform scalability and efficiency.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   );

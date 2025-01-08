@@ -60,6 +60,9 @@ const Projects = () => {
       name: 'Elite Car Rental',
       image: carRentalProject,
       description: "Developed a frontend website using Vue.js for an elite car rental service. Users are provided with a platform that allows seamless selection of supercars, with dynamic options for dates, times, and rental durations. This project gave me the opportunity to further hone my Vue.js skills while also focusing on creating a responsive and intuitive user experience. The website is designed to be accessible and fast, ensuring an exceptional user journey from start to finish.",
+      techStack: [
+        {name: 'Vue JS', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png'},
+      ],
       demoLink: "https://elite-car-rental.netlify.app/",
       githubLink: "https://github.com/Mullah98/Car-Rental-app"
     },
